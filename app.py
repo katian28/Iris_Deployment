@@ -4,10 +4,6 @@ import numpy as np
 import joblib
 
 def predict(data):
-    joblib==1.2.0
-    streamlit==1.27.2
-    scikit-learn==0.23.1
-    pandas==1.5.2
     clf = joblib.load("rf_model.sav", mmap_mode='r') 
     return clf.predict(data)
 
